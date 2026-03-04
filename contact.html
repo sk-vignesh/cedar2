@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Cedar Enterprises</title>
+    <meta name="description" content="Contact Cedar Enterprises — get in touch for construction or trading enquiries.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/cedar.css">
+</head>
+
+<body>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="construction.html">Construction</a>
+        <a href="trading.html">Trading</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <nav class="nav-inner">
+                <a href="index.html" class="brand">Cedar <span>Enterprises</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item">
+                        <a href="#">Our Businesses</a>
+                        <div class="nav-dropdown">
+                            <a href="construction.html">Construction</a>
+                            <a href="trading.html">Trading & Distribution</a>
+                        </div>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner" style="background-image: url('images/contact_bg.png'); padding-top: 72px;">
+        <div class="page-banner-overlay"></div>
+        <div class="page-banner-content container">
+            <span class="section-eyebrow">Get in Touch</span>
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section bg-off-white">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="fade-up">
+                    <span class="section-eyebrow">Cedar Enterprises</span>
+                    <h2>We'd Love to Hear From You</h2>
+                    <div class="divider-gold"></div>
+                    <p class="lead">Whether you have a construction project in mind, a trading or wholesale enquiry, or
+                        simply want to find out more about us — please get in touch.</p>
+                    <p>We aim to respond to all enquiries within one business day.</p>
+
+                    <div class="mt-32">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-text">
+                                <strong>Registered Office</strong>
+                                <span>Flat 9 Gainsborough Court<br>164–170 Kingston Road<br>Epsom, England, KT19
+                                    0SE</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">✉</div>
+                            <div class="contact-info-text">
+                                <strong>Email</strong>
+                                <a href="mailto:support@cedarfieldenterprises.com"
+                                    style="color:#3D5068;">support@cedarfieldenterprises.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">🏢</div>
+                            <div class="contact-info-text">
+                                <strong>Company Registration</strong>
+                                <span>Cedar Enterprises<br>Registered in England &amp; Wales<br>Company No.
+                                    16440063</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-up"
+                    style="background:var(--white); border-radius:8px; padding:48px; box-shadow:0 4px 24px rgba(13,27,42,0.1);">
+                    <h3 style="margin-bottom:24px;">Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john.smith@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company / Organisation</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiryType">Enquiry Type *</label>
+                            <select id="enquiryType" name="enquiryType" required>
+                                <option value="" disabled selected>Please select...</option>
+                                <option value="construction">Construction Enquiry</option>
+                                <option value="trading">Trading / Wholesale Enquiry</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Please describe your enquiry..."
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label
+                                style="flex-direction:row; align-items:flex-start; gap:10px; cursor:pointer; text-transform:none; letter-spacing:0; font-weight:400; font-size:0.85rem; color:#3D5068;">
+                                <input type="checkbox" id="privacy" name="privacy" required
+                                    style="margin-top:2px; flex-shrink:0; width:auto; border:1.5px solid #D0D8E4; border-radius:2px; padding:0; height:auto; accent-color:var(--gold);">
+                                I have read and agree to the <a href="privacy.html"
+                                    style="color:var(--gold); text-decoration:underline;">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-gold"
+                            style="width:100%; text-align:center; margin-top:8px;">Send Message</button>
+                        <div id="formMessage"
+                            style="display:none; margin-top:16px; padding:14px 16px; border-radius:4px; font-size:0.9rem;">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">Cedar <span>Enterprises</span></div>
+                        <p class="footer-desc">A UK holding company with interests in commercial construction and the
+                            wholesale distribution of soft drinks and beverages.</p>
+                        <p class="company-number">Company No. 16440063</p>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Navigation</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="construction.html">Construction</a></li>
+                            <li><a href="trading.html">Trading &amp; Distribution</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Contact</h5>
+                        <div class="footer-contact-item">
+                            <span class="icon">📍</span>
+                            <span>Flat 9 Gainsborough Court<br>164–170 Kingston Road<br>Epsom, England, KT19 0SE</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="icon">✉</span>
+                            <a href="mailto:support@cedarfieldenterprises.com"
+                                style="color:rgba(255,255,255,0.65);">support@cedarfieldenterprises.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Cedar Enterprises. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cedar.js"></script>
+</body>
+
+</html>
