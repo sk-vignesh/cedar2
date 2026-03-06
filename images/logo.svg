@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#0D1B2A" rx="24"/>
+
+  <!-- Cedar tree mark: geometric layered triangle suggesting a cedar tree -->
+  <!-- Layer 3 (bottom, widest) -->
+  <polygon points="100,118 68,142 132,142" fill="#C4A84C" opacity="0.55"/>
+  <!-- Layer 2 (middle) -->
+  <polygon points="100,96 72,122 128,122" fill="#C4A84C" opacity="0.75"/>
+  <!-- Layer 1 (top, narrowest) -->
+  <polygon points="100,68 78,100 122,100" fill="#C4A84C"/>
+  <!-- Trunk -->
+  <rect x="96" y="140" width="8" height="12" rx="1" fill="#C4A84C"/>
+
+  <!-- CEDAR text -->
+  <text x="100" y="174"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="15"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="4">CEDAR</text>
+
+  <!-- ENTERPRISES subtext -->
+  <text x="100" y="188"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="7"
+        font-weight="400"
+        fill="#C4A84C"
+        text-anchor="middle"
+        letter-spacing="4">ENTERPRISES</text>
+</svg>
